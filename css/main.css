@@ -1,0 +1,236 @@
+body {
+    margin:0;
+    background-image: url("../images/background.jpg");    
+    background-repeat: repeat;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;      
+}
+
+/*Layouts
+*/
+.header {     
+    font-size: 25px;
+    color: rgb(175, 89, 104);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    max-width: 20%;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(175, 89, 104);
+    
+}
+
+.nav-bar {       
+    display: flex;
+    background-color:rgb(216, 172, 179);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(175, 89, 104);
+}
+
+.nav-bar a {    
+    text-align: center;
+    padding: 20px 20px;
+    color: rgb(175, 89, 104);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.nav-bar a:hover {
+    background-color:rgb(175, 89, 104);
+    color:rgb(216, 172, 179);
+}
+
+.content {
+    
+    text-align:center;
+}
+
+.wrapper {
+    display:inline-block;
+    margin:0;
+    padding:0;
+
+}
+.wrapper li {
+    text-align: left;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    margin-left: 20px;     
+}
+
+.main > .main-content {
+    float:left;    
+    flex: 4;
+    padding-right: 5px;
+    margin-right: 15px;
+}
+
+.main > .side-bar {  
+    background-color: rgba(243, 131, 150, 0.918);  
+    border-top: 0;
+    border-bottom: 0;     
+    float:right;    
+    flex: 2;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(175, 89, 104);  
+    overflow-y: scroll;    
+}
+
+#side-img {
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(175, 89, 104);  
+}
+
+.side-bar h2 {
+    font-size: 25px;
+    color: rgb(175, 89, 104);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+
+#cooking {
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(175, 89, 104);  
+}
+
+.recipes {
+    height:350px;
+    width:350px;
+    background-size:cover;
+    display:inline-block;
+    border-radius: 10px;
+    margin:25px;
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+    cursor: pointer; 
+    position:relative; 
+    margin-left:60px;  
+}
+
+.recipes div {
+    position: absolute;
+    color: white;
+    padding:5px;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius:10px;
+    text-align:center;
+    height:300px;    
+    opacity:0;
+    transition:.3s;
+}
+
+.recipes div.show{
+    overflow:auto;
+    opacity:1;
+}
+
+.footer {
+    display: flex;
+    background-color:rgb(216, 172, 179);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(175, 89, 104);
+}
+
+.footer img {
+  max-width: 5%;
+}
+
+/* form */
+
+.form {
+    max-height: 500px;
+    max-width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(216, 172, 179);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(175, 89, 104);      
+    padding: 2px;
+    margin-bottom:30px;
+}
+
+.form label {
+    display:block;
+    padding:5px;
+}
+
+.form input {
+    padding:5px;
+    margin:2px;
+    display:block;
+    width:95%;
+    padding: 7px;
+    border-radius: 5px;
+    border-color: pink;
+}
+
+#submit {
+    border-radius:5px;
+    background:rgb(175, 89, 104) ;
+    padding:5px;
+    color: white;
+    margin:5px;
+    width:auto;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+#submit:hover {
+    background-color: pink;
+    color:black;
+}
+
+/* errors */
+
+#fname-error {
+    color: red;
+    display: none;
+    font-size: 10px;
+}
+
+#lname-error {
+    color: red;
+    display: none;
+    font-size:10px;
+}
+
+#email-error{
+    color: red;
+    display: none;
+    font-size:10px;
+}
+
+#mobile-error{
+    color: red;
+    display: none;
+    font-size:10px;
+}
